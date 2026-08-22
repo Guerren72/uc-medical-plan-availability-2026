@@ -117,7 +117,7 @@
       var zipCountiesForZip = ZIP_COUNTIES[zip] || [];
       var countyMatchesZip = zipCountiesForZip.indexOf(county) !== -1;
 
-      // Health Net Blue & Gold HMO -- ZIP carrier "HB", county column "HN"
+      // UC Blue & Gold HMO -- ZIP carrier "HB", county column "HN"
       var hnZipCode = (zipEntry.HB || {})[county] || null;
       var hnCountyCode = countyEntry.HN || null;
       var hn = combine(hnZipCode, hnCountyCode);
@@ -132,7 +132,7 @@
         county: county,
         countyMatchesZip: countyMatchesZip,
         plans: [
-          { name: 'Health Net Blue & Gold HMO', availability: hn },
+          { name: 'UC Blue & Gold HMO', availability: hn },
           { name: 'Kaiser Permanente',     availability: kp }
         ]
       };
