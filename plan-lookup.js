@@ -122,7 +122,7 @@
       var hnCountyCode = countyEntry.HN || null;
       var hn = combine(hnZipCode, hnCountyCode);
 
-      // Kaiser Permanente North -- ZIP carrier "KP", county column "Kaiser"
+      // Kaiser Permanente -- ZIP carrier "KP", county column "Kaiser"
       var kpZipCode = (zipEntry.KP || {})[county] || null;
       var kpCountyCode = countyEntry.Kaiser || null;
       var kp = combine(kpZipCode, kpCountyCode);
@@ -133,7 +133,7 @@
         countyMatchesZip: countyMatchesZip,
         plans: [
           { name: 'Health Net Blue & Gold HMO', availability: hn },
-          { name: 'Kaiser Permanente North',     availability: kp }
+          { name: 'Kaiser Permanente',     availability: kp }
         ]
       };
     }
