@@ -35,11 +35,6 @@
     --focus: #0b5fff;
     --error-ink: #a8122a;
   }
-.lookup-heading,
-.results-heading,
-.notes-heading {
-  background-color: var(--hmo-ink-soft) !important;
-}  
 /* Forced dark (user chose Dark) */
   :root[data-theme="dark"] {
     color-scheme: dark;
@@ -278,6 +273,11 @@
   }
 
   /* Form */
+.lookup-heading,
+.results-heading,
+.notes-heading {
+  background-color: var(--hmo-ink-soft) !important;
+}  
   .lookup-form {
     display: grid;
     gap: 18px;
