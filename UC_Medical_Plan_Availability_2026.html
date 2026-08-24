@@ -35,7 +35,12 @@
     --focus: #0b5fff;
     --error-ink: #a8122a;
   }
-  /* Forced dark (user chose Dark) */
+.lookup-heading,
+.results-heading,
+.notes-heading {
+  background-color: var(--hmo-ink-soft) !important;
+}  
+/* Forced dark (user chose Dark) */
   :root[data-theme="dark"] {
     color-scheme: dark;
     --uc-navy: #4a7bb8;
