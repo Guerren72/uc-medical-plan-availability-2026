@@ -219,7 +219,7 @@
         setError(zipInput, zipError, 'ZIP code must be exactly 5 digits.');
         ok = false;
       } else if (!ZIP_DATA[zip]) {
-        setError(zipInput, zipError, 'This ZIP code is not in the UC service area data.');
+        setError(zipInput, zipError, 'This ZIP code is not in a UC HMO service area.');
         ok = false;
       } else {
         setError(zipInput, zipError, '');
